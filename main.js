@@ -8,7 +8,10 @@ let counterValue = 0;
 
 //Contador
 counter.innerHTML = counterValue;
-
+function counterCount() {
+  counterValue += 1;
+  counter.innerHTML = counterValue;
+}
 //Función número aleatorio
 function getRandomNumber(max) {
   return Math.ceil(Math.random() * max);
@@ -50,6 +53,7 @@ function eraseInput() {
 function btnclick(event) {
   event.preventDefault();
   getFeedback();
+  counterCount();
 }
 
 button.addEventListener("click", btnclick);
