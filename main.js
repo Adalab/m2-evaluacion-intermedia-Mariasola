@@ -5,7 +5,9 @@ const button = document.querySelector(".main_btn");
 const feedback = document.querySelector(".main_feedback");
 const counter = document.querySelector(".header_counter");
 let counterValue = 0;
-// let feedbackContent = feedback.innerHTML;
+
+//Contador
+counter.innerHTML = counterValue;
 
 //Función número aleatorio
 function getRandomNumber(max) {
